@@ -58,8 +58,6 @@ header {
 .header-nav {
     display: flex;
     align-items: center; 
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .logo-header {
 font-family: 'Raleway';
@@ -69,6 +67,7 @@ color: var(--secondary-color) ;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-right: 76px;
+padding: 24px 24px;
 }
 .logo-part {
     color: var(--primary-brand) ;
@@ -81,6 +80,7 @@ margin-right: 76px;
 font-weight: 500;
 color: var(--secondary-color) ;
 letter-spacing: 0.02em;
+padding: 24px 24px;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -108,7 +108,7 @@ padding: 24px 0;
 /* <!-------------- Main ------------> */
 /* <!--- HERO ---> */
 .hero {
-    background: var(--secondary-color) ;
+    background-color: var(--secondary-color) ;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
@@ -129,14 +129,14 @@ padding: 24px 0;
     line-height: calc(24/16);
     letter-spacing: 0.04em;
     color: var(--third-color);
-    background: var(--primary-brand);
+    background-color: var(--primary-brand);
     cursor: pointer;
     border: none;
     border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-background: var(--pressed-state);
+background-color: var(--pressed-state);
 color: var(--third-color);
 }
 /* <!-- Section1 --> */
@@ -152,14 +152,13 @@ clip-path: inset(100%);
 clip: rect(0000);
 overflow: hidden;
 }
-.information-container {
+.section-our-features {
     padding-top: 120px;
-    padding-bottom: 120px;  
+    padding-bottom: 120px;
 }
-.menu-title {
+.features-title {
     display: flex;
-    padding-top: 72px;
-    gap: 24px;
+    gap: 0 24px;
 }
 .title {
     font-weight: 500;
@@ -174,6 +173,15 @@ line-height: calc(24/16);
 letter-spacing: 0.02em;
 }
 /* <!-- Section2 --> */
+.section-menu {
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+.menu-title {
+    display: flex;
+    margin-top: 72px;
+    gap: 24px;
+}
 .section-title {
     font-size: 36px;
     line-height: calc(40/36);
@@ -186,13 +194,13 @@ letter-spacing: 0.02em;
 }
 /* <!-- Section3 --> */
 .section-team {
-background: var(--background-color);
+background-color: var(--background-color);
 padding-top: 120px;
 padding-bottom: 120px;
 text-align: center;
 }
 .item {
-background: var(--third-color);
+background-color: var(--third-color);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
 }
@@ -209,7 +217,7 @@ border-radius: 0px 0px 4px 4px;
     padding-bottom: 8px;
 }
 /* <!-- Footer --> */
-.footer-container {
+ .section-footer {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -221,15 +229,16 @@ border-radius: 0px 0px 4px 4px;
     color: var(--background-color);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 16px;
+
 }
 footer {
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 .text-footer {
     width: 264px;
 color: var(--accent-color);
 letter-spacing: 0.02em;
+margin-top: 16px;
 }
 /* <!-- Portfolio --> */
 .portfolio-section {
@@ -247,7 +256,7 @@ letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16);  
-    background: var(--background-color);
+    background-color: var(--background-color);
     color: var(--primary-brand);
     border: 1px solid var(--accent-color);
     cursor: pointer;
@@ -257,8 +266,9 @@ border-radius: 4px;
 }
 .btn-filter:hover,
 .btn-filter:focus {
-    background: var(--pressed-state);
+    background-color: var(--pressed-state);
     color: var(--third-color);
+    border-color: transparent;
 }
 .project-menu {
     display: flex;
